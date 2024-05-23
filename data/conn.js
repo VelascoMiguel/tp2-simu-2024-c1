@@ -11,7 +11,7 @@ export default async function getConnection() {
     try {
       instance = await client.connect();
     } catch (error) {
-      console.log(err.message);
+      console.log("Error in the connection : ",err);
     }
   }
   return instance;
